@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  line-height: 1.5em;
+  transition: all 0.3s ease;
+  font-family: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background: #F3F0E7;
+  width: 70%;
+  margin: 5% auto;
+}
+
+header {
+  border-radius: 0.75rem;
+  background-color: #585858;
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  transition: none;
+  font-size: 4em;
+  font-weight: 300;
+  padding: 0.5em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.campo {
+  border: none;
+  color: rgb(75, 85, 99);
+  display: block;
+  font: 400 0.875em;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0.1em;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+}
+
+main {
+  display: flex;
+}
+
+main {
+  display: block;
+}
+
+input:not([type=radio]):not([type="checkbox"]):not([type="submit"]){
+  background-color: rgb(249, 250, 251);
+  border: 2px solid rgb(192, 196, 201);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 2em;
+  width: 100%;
+  font: 400 0.875em;
+  padding: 12px;
+  color: rgb(32, 36, 47);
+  text-align: start;
+  cursor: text;
+  display: inline-block;
+  transition: all 0.15s ease-out;
+  text-wrap: nowrap;
+  white-space: nowrap;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.875em;
+  background: #10b981;
+  color: #fff;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #095e42;
+}
+
+textarea {
+  background-color: rgb(249, 250, 251);
+  border: 1px solid rgb(192, 196, 201);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 8em;
+  width: 100%;
+  font: 400 0.875em;
+  padding: 12px;
+  color: rgb(32, 36, 47);
+  cursor: text;
+  display: inline-block;
+  transition: all 0.15s ease-out;
+  text-wrap: nowrap;
+  white-space: nowrap;
+}
+
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgb(192, 196, 201);
+  width: 100%;
+  max-width: 300px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+option {
+  font-size: 1em;
+}
+
+.contenedor {
+  background: #fff;
+  padding: 2em;
+  border-radius: 0.75rem;
+  line-height: 2;
+  overflow: hidden;
+  margin: 2rem 0;
+  position: relative;
+  font-size: 1em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+button {
+  margin-top:0.5em;
+  background-color: #3b4ce2;
+  color: white;
+  border-radius: 5px;
+  display:block;
+  font-size: 0.875em;
+  padding: 0.5em 1em;
+  border: none;
+}
+
+button:hover {
+  background-color: #26308d;
+  cursor: pointer;
+}
+
+@media (max-width: 580px){
+  html {
+    font-size: small;
+  }
+}
+
+@media (max-width: 462px){
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 430px){
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 360px){
+  html {
+    font-size: 8px;
+  }
+}
