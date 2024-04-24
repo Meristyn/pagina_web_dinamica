@@ -1,5 +1,4 @@
 # Página web dinámica
----
 Esta página es un formulario de Curriculum Vitae con campos dinámicos con conexión a servidor MySQL usando PHP.
 ## Estructura de mi base de datos
 1. Tabla datos_registrados: Almacena los datos personales.
