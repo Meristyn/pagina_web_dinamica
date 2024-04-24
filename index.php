@@ -39,7 +39,22 @@
                 <option value="Perú">Perú</option>
                 <option value="México">México</option>
                 <option value="Argentina">Argentina</option>
+                <option value="España">España</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Chile">Chile</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cuba">Cuba</option>
+                <option value="República Dominicana">República Dominicana</option>
             </select><br>
+
         </div>
         <div class="contenedor">
             <h2>Contacto</h2>
@@ -167,7 +182,7 @@
             <label for="perfil">Perfil</label><br>
             <textarea id="perfil" name="perfil" rows="4" cols="50" required></textarea><br>
 
-            <input type="submit" value="Enviar" id="submitBtn">
+            <input type="submit" value="Llena todos los campos" id="submitBtn" disabled>
         </div>
     </form>
 </main>

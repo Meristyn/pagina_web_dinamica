@@ -2,7 +2,7 @@ function agregarOcupacion() {
     var container = document.getElementById("ocupaciones-container");
     var nuevoInput = document.createElement("input");
     nuevoInput.type = "text";
-    nuevoInput.name = "ocupaciones[]"; // Agregamos corchetes para enviarlo como array
+    nuevoInput.name = "ocupaciones[]";
     nuevoInput.required = true;
     container.appendChild(nuevoInput);
     container.appendChild(document.createElement("br"));
@@ -76,7 +76,7 @@ function agregarFormacion() {
     contenedor.appendChild(nuevaFormacion);
 }
 
-let key = 1; // Variable global para mantener un contador
+let key = 1;
 
 function agregarIdioma() {
     const contenedor = document.getElementById("idiomas-container");
@@ -109,6 +109,44 @@ function agregarIdioma() {
     `;
     
     contenedor.appendChild(nuevoIdioma);
-    key++; // Incrementar el contador
+    key++;
     
 }
+
+function verificarFormulario() {
+    var nombre = document.getElementById("nombre_apellidos").value.trim();
+    var fechaNacimiento = document.getElementById("fecha_nacimiento").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var telefono = document.getElementById("telefono").value.trim();
+    var perfil = document.getElementById("perfil").value.trim();
+
+    if (nombre === "" || fechaNacimiento === "" || email === "" || telefono === "" || perfil === "") {
+        document.getElementById("submitBtn").disabled = true;
+    } else {
+        document.getElementById("submitBtn").disabled = false;
+        document.getElementById("submitBtn").value = "Enviar";
+    }
+}
+
+function init() {
+    document.getElementById("submitBtn").addEventListener("click", function() {
+        verificarFormulario();
+    });
+
+    var inputs = document.getElementsByTagName("input");
+    for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener("blur", function() {
+            verificarFormulario();
+        });
+    }
+
+    var textareas = document.getElementsByTagName("textarea");
+    for (var j = 0; j < textareas.length; j++) {
+        textareas[j].addEventListener("blur", function() {
+            verificarFormulario();
+        });
+    }
+}
+
+window.onload = init;
+

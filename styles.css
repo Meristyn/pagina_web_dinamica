@@ -81,7 +81,7 @@ input[type="radio"] {
     cursor: pointer;
 }
 
-input[type="submit"] {
+#submitBtn {
   display: block;
   padding: 0.5em 1em;
   border-radius: 5px;
@@ -94,8 +94,14 @@ input[type="submit"] {
   border: none;
 }
 
-input[type="submit"]:hover {
+#submitBtn:hover {
   background-color: #095e42;
+}
+
+#submitBtn:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
 }
 
 textarea {
