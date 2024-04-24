@@ -4,9 +4,10 @@ Este proyecto consiste en una página web dinámica con un formulario que permit
 
 ## Estructura del Proyecto
 
-- `index.html`: El archivo HTML que contiene la estructura de la página web y el formulario.
+- `index.php`: Archivo que contiene la estructura de la página web y el formulario.
 - `styles.css`: Archivo CSS que contiene los estilos de la página.
 - `script.js`: Archivo JavaScript que proporciona funcionalidades interactivas al formulario.
+- `datos.php`: El archivo PHP que contiene el procesamiento de datos y los envía a la base de datos.
 - `reset.css`: Archivo CSS que resetea los estilos por defecto del navegador para una mejor consistencia visual.
 
 ## Tecnologías Utilizadas
